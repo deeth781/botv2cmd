@@ -155,9 +155,6 @@ logger("┏━━━━━━━━━━━━━━━━━━━━━━━
   const handleRefresh = require("./handle/handleRefresh")({ api, models, Users, Threads, Currencies });
   const handleCreateDatabase = require("./handle/handleCreateDatabase")({  api, Threads, Users, Currencies, models });
   const handleUnsend = require("./handle/handleUnsend")({ api });
- (async () => {
-  await handleUnsend({ event });
-})();
 
 //logger hiện console
 
